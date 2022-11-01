@@ -28,7 +28,7 @@
     <div class="row g-0">
       <div class="col-md-6">
         <br><br><br><br>
-          <?
+          <?php
           if (array_key_exists("rush", $_POST)) {
               echo '<img src="RUSH.png" class="img-fluid rounded-start" alt="...">';
           } elseif (array_key_exists("ayla", $_POST)) {
@@ -44,7 +44,7 @@
       <div class="col-md-6">
       <div class="container">
       <h4 class="text-center">Rent your car now!</h4>
-      <form action= "Erlangga_mybooking.phps" method="POST">
+      <form action= "Erlangga_mybooking.php" method="POST">
           <div class= "mb-3">
               <label for="name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder=" ">
