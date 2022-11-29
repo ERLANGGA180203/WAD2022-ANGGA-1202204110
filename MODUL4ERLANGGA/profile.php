@@ -1,7 +1,7 @@
         <?php
         session_start();
         include('connect.php');
-        if (isset($_SESSION['isd'])) {
+        if (isset($_SESSION['id'])) {
             $id = $_SESSION['id'];
             $query = "SELECT * FROM users WHERE id='$id'";
             $select = mysqli_query($connect, $query);

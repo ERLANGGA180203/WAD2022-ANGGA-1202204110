@@ -55,7 +55,7 @@
                     $query = "UPDATE users SET nama='$nama',email='$email',no_hp='$no_hp' WHERE id='$id'";
                     $update = mysqli_query($connect,$query);
                     $_SESSION['updated'] = 'Berhasil update profile!';
-                    $_SESSION['bgcoloras'] = $bgcolor;
+                    $_SESSION['bgcolor'] = $bgcolor;
                     header("Location: profile.php");
                     header("Location: ADD_ITEM.php");
                     header("Location: detail.php");
