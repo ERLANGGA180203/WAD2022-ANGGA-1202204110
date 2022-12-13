@@ -50,7 +50,7 @@ class ShowroomsController extends Controller
             . '.' . $request->foto->extension();
         $request->foto->move(public_path('gambar_mobil'), $imgName);
 
-        showrooms::create([
+        showrooms::creat([
             'user_id' => Auth::user()->id,
             'name' => $request->nama,
             'owner' => $request->pemilik,
@@ -85,7 +85,7 @@ class ShowroomsController extends Controller
     public function edit($id)
     {
         $data_mobil = showrooms::where('id', $id)->firstOrFail();
-        return view('ERLANGGA_EDITCAR', compact('data_mobil'));
+        return view('ERLANGGA_EDITCAR', compact(''));
     }
 
     /**

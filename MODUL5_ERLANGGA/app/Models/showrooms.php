@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class showrooms extends Model
 {
     protected $primaryKey = 'id';
-    protected $table = "showrooms";
+    protected $table = "showroom";
     protected $fillable = [
         'user_id',
         'name',
