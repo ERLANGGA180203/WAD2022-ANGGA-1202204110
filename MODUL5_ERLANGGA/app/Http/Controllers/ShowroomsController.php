@@ -50,7 +50,7 @@ class ShowroomsController extends Controller
             . '.' . $request->foto->extension();
         $request->foto->move(public_path('gambar_mobil'), $imgName);
 
-        showrooms::creat([
+        showrooms::create([
             'user_id' => Auth::user()->id,
             'name' => $request->nama,
             'owner' => $request->pemilik,

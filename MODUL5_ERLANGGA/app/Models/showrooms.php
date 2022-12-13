@@ -9,7 +9,7 @@ class showrooms extends Model
 {
     protected $primaryKey = 'id';
     protected $table = "showroom";
-    protected $fillable = [
+    protected $filltable = [
         'user_id',
         'name',
         'owner', 
